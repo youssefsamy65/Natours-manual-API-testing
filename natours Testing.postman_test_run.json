@@ -1,0 +1,2416 @@
+{
+	"id": "2b7f6c23-eaa7-4a90-a31f-2601ca392352",
+	"name": "natours Testing",
+	"timestamp": "2024-10-16T17:28:11.825Z",
+	"collection_id": "37613391-b5dadfa2-bfbe-4070-91ec-c06b14cc6279",
+	"folder_id": 0,
+	"environment_id": "37613391-492e1cc9-5e08-4278-893d-4959520ef74c",
+	"totalPass": 205,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-10-16T17:27:58.127Z",
+	"totalFail": 8,
+	"results": [
+		{
+			"id": "b0c70736-cadb-4189-9ca3-376daf2c159a",
+			"name": "sign up",
+			"url": "https://www.natours.dev/api/v1/users/signup",
+			"time": 1012,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 201": false,
+				"Response is in JSON format": true,
+				"Testing URL stucture": true,
+				"Testing request method": true,
+				"Schema is valid": false
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response is in JSON format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing URL stucture": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing request method": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				1012
+			],
+			"allTests": [
+				{
+					"Status code is 201": false,
+					"Response is in JSON format": true,
+					"Testing URL stucture": true,
+					"Testing request method": true,
+					"Schema is valid": false
+				}
+			]
+		},
+		{
+			"id": "947818f4-c30f-4fab-a2e3-a1d93ebbb4cf",
+			"name": "sign up Duplicated email",
+			"url": "https://www.natours.dev/api/v1/users/signup",
+			"time": 478,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Testing response body ": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing response body ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				478
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Testing response body ": true
+				}
+			]
+		},
+		{
+			"id": "fe11a258-2a3b-4022-b795-44f3133c5c3d",
+			"name": "login invalid email",
+			"url": "https://www.natours.dev/api/v1/users/login",
+			"time": 158,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status code is 401": true,
+				"Testing response body ": true
+			},
+			"testPassFailCounts": {
+				"Status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing response body ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				158
+			],
+			"allTests": [
+				{
+					"Status code is 401": true,
+					"Testing response body ": true
+				}
+			]
+		},
+		{
+			"id": "a6d8b24c-5785-4a7a-84c9-29d51f15a87d",
+			"name": "login",
+			"url": "https://www.natours.dev/api/v1/users/login",
+			"time": 474,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response is in JSON format": true,
+				"Testing URL stucture": true,
+				"Testing request method": true,
+				"Testing token environment variable": true,
+				"Request Schema is valid": true,
+				"Response Schema is valid": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is in JSON format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing URL stucture": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing request method": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing token environment variable": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Request Schema is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response Schema is valid": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				474
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response is in JSON format": true,
+					"Testing URL stucture": true,
+					"Testing request method": true,
+					"Testing token environment variable": true,
+					"Request Schema is valid": true,
+					"Response Schema is valid": true
+				}
+			]
+		},
+		{
+			"id": "1091ec7b-2c61-410f-9759-c0bcd06d9821",
+			"name": "forgotpassword",
+			"url": "https://www.natours.dev/api/v1/users/forgotpassword",
+			"time": 264,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				264
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "559215ce-ec85-4e4f-812d-dff754d0dbd9",
+			"name": "Reset Password",
+			"url": "https://www.natours.dev/api/v1/users/resetpassword/4c2b7e6dc4d2cfdab5371c999dd6c62c911f6cb3fc273e26028d9be51bc8946b",
+			"time": 173,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Testing response body ": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing response body ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				173
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Testing response body ": true
+				}
+			]
+		},
+		{
+			"id": "ca857ff4-7a89-4b8b-b6cd-3ee806a924d7",
+			"name": "update password",
+			"url": "https://www.natours.dev/api/v1/users/updatepassword",
+			"time": 161,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Status code is 403": true,
+				"Response is in JSON format": true,
+				"Properties 'structure' of the response": true,
+				"Check type of each property of the response": true,
+				"Authorization header is present": true,
+				"Testing request method": true,
+				"Testing URL stucture": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is in JSON format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Properties 'structure' of the response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check type of each property of the response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Authorization header is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing request method": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing URL stucture": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				161
+			],
+			"allTests": [
+				{
+					"Status code is 403": true,
+					"Response is in JSON format": true,
+					"Properties 'structure' of the response": true,
+					"Check type of each property of the response": true,
+					"Authorization header is present": true,
+					"Testing request method": true,
+					"Testing URL stucture": true
+				}
+			]
+		},
+		{
+			"id": "55cf014d-582c-4985-a8c9-a6cfbacb4b3e",
+			"name": "Get All Tours",
+			"url": "https://www.natours.dev/api/v1/tours",
+			"time": 169,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response is in JSON format": true,
+				"Properties 'structure' of the response": true,
+				"Check type of each property of the response": true,
+				"The data array length is the same as the results property": true,
+				"Testing request method": true,
+				"Testing URL stucture": true,
+				"Schema is valid": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is in JSON format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Properties 'structure' of the response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check type of each property of the response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The data array length is the same as the results property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing request method": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing URL stucture": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				169
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response is in JSON format": true,
+					"Properties 'structure' of the response": true,
+					"Check type of each property of the response": true,
+					"The data array length is the same as the results property": true,
+					"Testing request method": true,
+					"Testing URL stucture": true,
+					"Schema is valid": true
+				}
+			]
+		},
+		{
+			"id": "c05fb1df-1d87-4af1-a5a1-b414de50a716",
+			"name": "Get All Tours with Fields Param",
+			"url": "https://www.natours.dev/api/v1/tours?fields=id",
+			"time": 162,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response is in JSON format": true,
+				"Properties 'structure' of the response": true,
+				"Check type of each property of the response": true,
+				"The data array length is the same as the results property": true,
+				"Testing request method": true,
+				"Testing URL stucture": true,
+				"Schema is valid": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is in JSON format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Properties 'structure' of the response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check type of each property of the response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The data array length is the same as the results property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing request method": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing URL stucture": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				162
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response is in JSON format": true,
+					"Properties 'structure' of the response": true,
+					"Check type of each property of the response": true,
+					"The data array length is the same as the results property": true,
+					"Testing request method": true,
+					"Testing URL stucture": true,
+					"Schema is valid": false
+				}
+			]
+		},
+		{
+			"id": "7cb8a6d4-9aca-45c5-8cdb-7c15d00b9e29",
+			"name": "create tour",
+			"url": "https://www.natours.dev/api/v1/tours",
+			"time": 160,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Status code is 403": true,
+				"Response is in JSON format": true,
+				"Properties 'structure' of the response": true,
+				"Check type of each property of the response": true,
+				"Testing request method": true,
+				"Testing URL stucture": true,
+				"Authorization header is present": true,
+				"Request body is correct": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is in JSON format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Properties 'structure' of the response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check type of each property of the response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing request method": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing URL stucture": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Authorization header is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Request body is correct": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				160
+			],
+			"allTests": [
+				{
+					"Status code is 403": true,
+					"Response is in JSON format": true,
+					"Properties 'structure' of the response": true,
+					"Check type of each property of the response": true,
+					"Testing request method": true,
+					"Testing URL stucture": true,
+					"Authorization header is present": true,
+					"Request body is correct": true
+				}
+			]
+		},
+		{
+			"id": "f4dc6b0c-e595-417f-a6b4-3270cafd94fe",
+			"name": "Get Tour By ID",
+			"url": "https://www.natours.dev/api/v1/tours/5c88fa8cf4afda39709c2955",
+			"time": 167,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response is in JSON format": true,
+				"Testing request method": true,
+				"Testing URL stucture": true,
+				"Schema is valid": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is in JSON format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing request method": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing URL stucture": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				167
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response is in JSON format": true,
+					"Testing request method": true,
+					"Testing URL stucture": true,
+					"Schema is valid": true
+				}
+			]
+		},
+		{
+			"id": "bdfeb864-f4a1-46f7-954a-b73558cb9325",
+			"name": "Get Tour Wrong ID",
+			"url": "https://www.natours.dev/api/v1/tours/eid",
+			"time": 158,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Testing response body ": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing response body ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				158
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Testing response body ": true
+				}
+			]
+		},
+		{
+			"id": "6d0fd385-27da-47a5-a61c-69949f6b2fa1",
+			"name": "Update",
+			"url": "https://www.natours.dev/api/v1/tours/67016d4c5b36a1fe731ffafc",
+			"time": 161,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Status code is 403": true,
+				"Response is in JSON format": true,
+				"Properties 'structure' of the response": true,
+				"Check type of each property of the response": true,
+				"Testing request method": true,
+				"Testing URL stucture": true,
+				"Authorization header is present": true,
+				"Request body is correct": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is in JSON format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Properties 'structure' of the response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check type of each property of the response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing request method": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing URL stucture": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Authorization header is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Request body is correct": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				161
+			],
+			"allTests": [
+				{
+					"Status code is 403": true,
+					"Response is in JSON format": true,
+					"Properties 'structure' of the response": true,
+					"Check type of each property of the response": true,
+					"Testing request method": true,
+					"Testing URL stucture": true,
+					"Authorization header is present": true,
+					"Request body is correct": true
+				}
+			]
+		},
+		{
+			"id": "95134de3-ce40-4f68-a4de-87c207e85352",
+			"name": "Delete Tour",
+			"url": "https://www.natours.dev/api/v1/tours/66d190e44487954d5cfd69bf",
+			"time": 158,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Status code is 403": true,
+				"Response is in JSON format": true,
+				"Properties 'structure' of the response": true,
+				"Check type of each property of the response": true,
+				"Testing request method": true,
+				"Testing URL stucture": true,
+				"Authorization header is present": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is in JSON format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Properties 'structure' of the response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check type of each property of the response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing request method": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing URL stucture": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Authorization header is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				158
+			],
+			"allTests": [
+				{
+					"Status code is 403": true,
+					"Response is in JSON format": true,
+					"Properties 'structure' of the response": true,
+					"Check type of each property of the response": true,
+					"Testing request method": true,
+					"Testing URL stucture": true,
+					"Authorization header is present": true
+				}
+			]
+		},
+		{
+			"id": "f31ec3b0-3b01-483a-a618-d3cd000aac47",
+			"name": "Top 5 tours",
+			"url": "https://www.natours.dev/api/v1/tours/top-5-cheap",
+			"time": 161,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response is in JSON format": true,
+				"The data array length is the same as the results property": true,
+				"Testing request method": true,
+				"Testing URL stucture": true,
+				"Schema is valid": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is in JSON format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The data array length is the same as the results property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing request method": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing URL stucture": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				161
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response is in JSON format": true,
+					"The data array length is the same as the results property": true,
+					"Testing request method": true,
+					"Testing URL stucture": true,
+					"Schema is valid": false
+				}
+			]
+		},
+		{
+			"id": "6a73f914-d333-4a39-a1ab-2ff88e4a653c",
+			"name": "stats",
+			"url": "https://www.natours.dev/api/v1/tours/tour-stats",
+			"time": 155,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response is in JSON format": true,
+				"Testing request method": true,
+				"Testing URL stucture": true,
+				"Schema is valid": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is in JSON format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing request method": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing URL stucture": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				155
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response is in JSON format": true,
+					"Testing request method": true,
+					"Testing URL stucture": true,
+					"Schema is valid": true
+				}
+			]
+		},
+		{
+			"id": "3422e4d0-88e3-48b7-83e8-bcaaebbecb43",
+			"name": "Monthly Plan",
+			"url": "https://www.natours.dev/api/v1/tours/monthly-plan/2021",
+			"time": 158,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Status code is 403": true,
+				"Response is in JSON format": true,
+				"Properties 'structure' of the response": true,
+				"Check type of each property of the response": true,
+				"Testing request method": true,
+				"Testing URL stucture": true,
+				"Authorization header is present": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is in JSON format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Properties 'structure' of the response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check type of each property of the response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing request method": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing URL stucture": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Authorization header is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				158
+			],
+			"allTests": [
+				{
+					"Status code is 403": true,
+					"Response is in JSON format": true,
+					"Properties 'structure' of the response": true,
+					"Check type of each property of the response": true,
+					"Testing request method": true,
+					"Testing URL stucture": true,
+					"Authorization header is present": true
+				}
+			]
+		},
+		{
+			"id": "5376ebda-c817-434c-b01f-ab98ce8e0413",
+			"name": "Tour within radius",
+			"url": "https://www.natours.dev/api/v1/tours/tours-within/70000/center/30.041273,31.206442/unit/km",
+			"time": 168,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response is in JSON format": true,
+				"The data array length is the same as the results property": true,
+				"Testing URL stucture": true,
+				"Testing request method": true,
+				"Schema is valid": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is in JSON format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The data array length is the same as the results property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing URL stucture": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing request method": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				168
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response is in JSON format": true,
+					"The data array length is the same as the results property": true,
+					"Testing URL stucture": true,
+					"Testing request method": true,
+					"Schema is valid": true
+				}
+			]
+		},
+		{
+			"id": "f49e1d84-cc5b-4ee1-ae9a-ee21cd31cd86",
+			"name": "Tour within radius wrong unit",
+			"url": "https://www.natours.dev/api/v1/tours/tours-within/10000/center/30.041273,31.206442/unit/kms",
+			"time": 160,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 400": false,
+				"Testing response body ": false
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Testing response body ": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				160
+			],
+			"allTests": [
+				{
+					"Status code is 400": false,
+					"Testing response body ": false
+				}
+			]
+		},
+		{
+			"id": "fce615e1-314c-44b8-8cac-9c85820debb4",
+			"name": "Tour within radius wrong center",
+			"url": "https://www.natours.dev/api/v1/tours/tours-within/10000/center/30.041273,31.206442d/unit/kms",
+			"time": 157,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Testing response body ": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing response body ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				157
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Testing response body ": true
+				}
+			]
+		},
+		{
+			"id": "b9b9b659-e517-4de3-b216-3996c4365ddf",
+			"name": "Tours Distances To Location",
+			"url": "https://www.natours.dev/api/v1/tours/distances/30.041273,31.206442/unit/mi",
+			"time": 159,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response is in JSON format": true,
+				"The data array length is the same as the results property": true,
+				"Testing URL stucture": true,
+				"Testing request method": true,
+				"Schema is valid": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is in JSON format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The data array length is the same as the results property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing URL stucture": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing request method": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				159
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response is in JSON format": true,
+					"The data array length is the same as the results property": true,
+					"Testing URL stucture": true,
+					"Testing request method": true,
+					"Schema is valid": true
+				}
+			]
+		},
+		{
+			"id": "0eb4c1ee-f3f3-4396-b342-bef9afcfb8ca",
+			"name": "Tours Distances To Location Wrong Unit",
+			"url": "https://www.natours.dev/api/v1/tours/distances/30.041273,31.206442/unit/mis",
+			"time": 158,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 400": false,
+				"Testing response body ": false
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Testing response body ": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				158
+			],
+			"allTests": [
+				{
+					"Status code is 400": false,
+					"Testing response body ": false
+				}
+			]
+		},
+		{
+			"id": "990bcfbb-f067-46ad-af1f-dc6b47138e7d",
+			"name": "getUserByID",
+			"url": "https://www.natours.dev/api/v1/users/66d2c1e6805340c2ae14efeb",
+			"time": 158,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Status code is 403": true,
+				"Response is in JSON format": true,
+				"Properties 'structure' of the response": true,
+				"Check type of each property of the response": true,
+				"Authorization header is present": true,
+				"Testing request method": true,
+				"Testing URL stucture": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is in JSON format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Properties 'structure' of the response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check type of each property of the response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Authorization header is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing request method": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing URL stucture": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				158
+			],
+			"allTests": [
+				{
+					"Status code is 403": true,
+					"Response is in JSON format": true,
+					"Properties 'structure' of the response": true,
+					"Check type of each property of the response": true,
+					"Authorization header is present": true,
+					"Testing request method": true,
+					"Testing URL stucture": true
+				}
+			]
+		},
+		{
+			"id": "8d2a2f5d-ac3d-46f1-a73c-264041c94f54",
+			"name": "get all users",
+			"url": "https://www.natours.dev/api/v1/users",
+			"time": 158,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Status code is 403": true,
+				"Response is in JSON format": true,
+				"Properties 'structure' of the response": true,
+				"Check type of each property of the response": true,
+				"Authorization header is present": true,
+				"Testing request method": true,
+				"Testing URL stucture": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is in JSON format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Properties 'structure' of the response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check type of each property of the response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Authorization header is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing request method": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing URL stucture": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				158
+			],
+			"allTests": [
+				{
+					"Status code is 403": true,
+					"Response is in JSON format": true,
+					"Properties 'structure' of the response": true,
+					"Check type of each property of the response": true,
+					"Authorization header is present": true,
+					"Testing request method": true,
+					"Testing URL stucture": true
+				}
+			]
+		},
+		{
+			"id": "917aaa29-290f-4702-ab41-2773878b0515",
+			"name": "Update Me Data",
+			"url": "https://www.natours.dev/api/v1/users/updateMe",
+			"time": 160,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Status code is 403": true,
+				"Response is in JSON format": true,
+				"Properties 'structure' of the response": true,
+				"Check type of each property of the response": true,
+				"Authorization header is present": true,
+				"Request body is correct": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is in JSON format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Properties 'structure' of the response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check type of each property of the response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Authorization header is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Request body is correct": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				160
+			],
+			"allTests": [
+				{
+					"Status code is 403": true,
+					"Response is in JSON format": true,
+					"Properties 'structure' of the response": true,
+					"Check type of each property of the response": true,
+					"Authorization header is present": true,
+					"Request body is correct": true
+				}
+			]
+		},
+		{
+			"id": "a9d3650f-57ba-4e95-95d6-cc1795c7d4da",
+			"name": "Delete Me (inactive)",
+			"url": "https://www.natours.dev/api/v1/users/deleteMe",
+			"time": 158,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Status code is 403": true,
+				"Response is in JSON format": true,
+				"Properties 'structure' of the response": true,
+				"Check type of each property of the response": true,
+				"Authorization header is present": true,
+				"Testing request method": true,
+				"Testing URL stucture": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is in JSON format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Properties 'structure' of the response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check type of each property of the response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Authorization header is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing request method": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing URL stucture": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				158
+			],
+			"allTests": [
+				{
+					"Status code is 403": true,
+					"Response is in JSON format": true,
+					"Properties 'structure' of the response": true,
+					"Check type of each property of the response": true,
+					"Authorization header is present": true,
+					"Testing request method": true,
+					"Testing URL stucture": true
+				}
+			]
+		},
+		{
+			"id": "7286837f-9e68-496b-92d5-0c4f02288b28",
+			"name": "Delete User",
+			"url": "https://www.natours.dev/api/v1/users/66d000d4a95f26f1c9e98410",
+			"time": 160,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Status code is 403": true,
+				"Response is in JSON format": true,
+				"Properties 'structure' of the response": true,
+				"Check type of each property of the response": true,
+				"Authorization header is present": true,
+				"Testing request method": true,
+				"Testing URL stucture": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is in JSON format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Properties 'structure' of the response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check type of each property of the response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Authorization header is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing request method": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing URL stucture": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				160
+			],
+			"allTests": [
+				{
+					"Status code is 403": true,
+					"Response is in JSON format": true,
+					"Properties 'structure' of the response": true,
+					"Check type of each property of the response": true,
+					"Authorization header is present": true,
+					"Testing request method": true,
+					"Testing URL stucture": true
+				}
+			]
+		},
+		{
+			"id": "614ae062-7074-44be-bcf3-2224763b82f5",
+			"name": "Update User",
+			"url": "https://www.natours.dev/api/v1/users/66d2c1e6805340c2ae14efeb",
+			"time": 159,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Status code is 403": true,
+				"Response is in JSON format": true,
+				"Properties 'structure' of the response": true,
+				"Check type of each property of the response": true,
+				"Authorization header is present": true,
+				"Testing request method": true,
+				"Testing URL stucture": true,
+				"Request body is correct": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is in JSON format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Properties 'structure' of the response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check type of each property of the response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Authorization header is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing request method": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing URL stucture": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Request body is correct": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				159
+			],
+			"allTests": [
+				{
+					"Status code is 403": true,
+					"Response is in JSON format": true,
+					"Properties 'structure' of the response": true,
+					"Check type of each property of the response": true,
+					"Authorization header is present": true,
+					"Testing request method": true,
+					"Testing URL stucture": true,
+					"Request body is correct": true
+				}
+			]
+		},
+		{
+			"id": "b5c90ab3-1cfa-4398-85d8-5fc580b0e754",
+			"name": "MEEEE",
+			"url": "https://www.natours.dev/api/v1/users/me",
+			"time": 163,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response is in JSON format": true,
+				"Testing request method": true,
+				"Testing URL stucture": true,
+				"Authorization header is present": true,
+				"Schema is valid": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is in JSON format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing request method": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing URL stucture": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Authorization header is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				163
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response is in JSON format": true,
+					"Testing request method": true,
+					"Testing URL stucture": true,
+					"Authorization header is present": true,
+					"Schema is valid": true
+				}
+			]
+		},
+		{
+			"id": "26721c30-ea44-4239-95c5-bd780ab9e4a2",
+			"name": "Get All Reviews",
+			"url": "https://www.natours.dev/api/v1/reviews?rating[lt]=4&fields=review&sort=review",
+			"time": 162,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response is in JSON format": true,
+				"The data array length is the same as the results property": true,
+				"Testing request method": true,
+				"Testing URL stucture": true,
+				"Authorization header is present": true,
+				"Schema is valid": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is in JSON format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The data array length is the same as the results property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing request method": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing URL stucture": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Authorization header is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				162
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response is in JSON format": true,
+					"The data array length is the same as the results property": true,
+					"Testing request method": true,
+					"Testing URL stucture": true,
+					"Authorization header is present": true,
+					"Schema is valid": true
+				}
+			]
+		},
+		{
+			"id": "4a3c3497-dff4-4d42-8749-683bb4f84732",
+			"name": "Get Review By ID",
+			"url": "https://www.natours.dev/api/v1/reviews/65f4076a2603bd0015c6b26b",
+			"time": 163,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response is in JSON format": true,
+				"The data array length is the same as the results property": true,
+				"Testing request method": true,
+				"Testing URL stucture": true,
+				"Authorization header is present": true,
+				"Schema is valid": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is in JSON format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The data array length is the same as the results property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing request method": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing URL stucture": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Authorization header is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				163
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response is in JSON format": true,
+					"The data array length is the same as the results property": true,
+					"Testing request method": true,
+					"Testing URL stucture": true,
+					"Authorization header is present": true,
+					"Schema is valid": true
+				}
+			]
+		},
+		{
+			"id": "5901bc09-aeb7-4ef8-bf1d-18d7c6fecd8f",
+			"name": "Get Review wrong ID",
+			"url": "https://www.natours.dev/api/v1/reviews/65f4076a26",
+			"time": 160,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Testing response body ": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing response body ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				160
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Testing response body ": true
+				}
+			]
+		},
+		{
+			"id": "bb5dd7c3-6176-45e6-b9ff-d6ebb8ec9b23",
+			"name": "create Duplicate review",
+			"url": "https://www.natours.dev/api/v1/reviews",
+			"time": 177,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Testing response body ": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing response body ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				177
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Testing response body ": true
+				}
+			]
+		},
+		{
+			"id": "4375fc17-89b1-4071-b6e8-d24d7cb2b1f1",
+			"name": "create review for no tour",
+			"url": "https://www.natours.dev/api/v1/reviews",
+			"time": 160,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Testing response body ": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing response body ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				160
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Testing response body ": true
+				}
+			]
+		},
+		{
+			"id": "ac970682-ea23-4dee-ad9c-c695ab1e0866",
+			"name": "create review tour id doesn't exist",
+			"url": "https://www.natours.dev/api/v1/reviews",
+			"time": 162,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Testing response body ": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing response body ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				162
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Testing response body ": true
+				}
+			]
+		},
+		{
+			"id": "54758d33-b175-4b3c-be5b-e86325778e83",
+			"name": "create review wrong id format",
+			"url": "https://www.natours.dev/api/v1/reviews",
+			"time": 161,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Testing response body ": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing response body ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				161
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Testing response body ": true
+				}
+			]
+		},
+		{
+			"id": "06d5c807-5e81-4d3f-a654-b3f0e0f86530",
+			"name": "Delete Review",
+			"url": "https://www.natours.dev/api/v1/reviews/66ee04f68c70e9ad9544c492",
+			"time": 158,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Status code is 403": true,
+				"Response is in JSON format": true,
+				"Properties 'structure' of the response": true,
+				"Check type of each property of the response": true,
+				"Testing request method": true,
+				"Testing URL stucture": true,
+				"Authorization header is present": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is in JSON format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Properties 'structure' of the response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check type of each property of the response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing request method": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing URL stucture": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Authorization header is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				158
+			],
+			"allTests": [
+				{
+					"Status code is 403": true,
+					"Response is in JSON format": true,
+					"Properties 'structure' of the response": true,
+					"Check type of each property of the response": true,
+					"Testing request method": true,
+					"Testing URL stucture": true,
+					"Authorization header is present": true
+				}
+			]
+		},
+		{
+			"id": "f4f89ef3-905a-407e-8e44-6d2de963bc37",
+			"name": "Update Review",
+			"url": "https://www.natours.dev/api/v1/reviews/66ede84372aa4fd8ac778d14",
+			"time": 158,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Status code is 403": true,
+				"Response is in JSON format": true,
+				"Properties 'structure' of the response": true,
+				"Check type of each property of the response": true,
+				"Testing request method": true,
+				"Testing URL stucture": true,
+				"Authorization header is present": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is in JSON format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Properties 'structure' of the response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check type of each property of the response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing request method": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing URL stucture": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Authorization header is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				158
+			],
+			"allTests": [
+				{
+					"Status code is 403": true,
+					"Response is in JSON format": true,
+					"Properties 'structure' of the response": true,
+					"Check type of each property of the response": true,
+					"Testing request method": true,
+					"Testing URL stucture": true,
+					"Authorization header is present": true
+				}
+			]
+		},
+		{
+			"id": "f1f94351-190c-45f0-818a-a45a30cfb21f",
+			"name": "Get tour/review",
+			"url": "https://www.natours.dev/api/v1/tours/5c88fa8cf4afda39709c2955/reviews",
+			"time": 174,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response is in JSON format": true,
+				"The data array length is the same as the results property": true,
+				"Testing request method": true,
+				"Testing URL stucture": true,
+				"Authorization header is present": true,
+				"Schema is valid": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is in JSON format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The data array length is the same as the results property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing request method": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing URL stucture": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Authorization header is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				174
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response is in JSON format": true,
+					"The data array length is the same as the results property": true,
+					"Testing request method": true,
+					"Testing URL stucture": true,
+					"Authorization header is present": true,
+					"Schema is valid": true
+				}
+			]
+		},
+		{
+			"id": "010ae176-a6f9-4d7e-b72f-773619f54eba",
+			"name": "Get tour/review tour-id doesn't exist",
+			"url": "https://www.natours.dev/api/v1/tours/5c88fa8cf4afda397h9c295h/reviews",
+			"time": 161,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Testing response body ": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing response body ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				161
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Testing response body ": true
+				}
+			]
+		},
+		{
+			"id": "af31d159-57c0-4657-a7dd-b4d69b44c2f7",
+			"name": "Get tour/review wrong id format",
+			"url": "https://www.natours.dev/api/v1/tours/5c88fa8cf4/reviews",
+			"time": 160,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Testing response body ": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing response body ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				160
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Testing response body ": true
+				}
+			]
+		},
+		{
+			"id": "a50a52cd-fa04-4b95-bb13-1977a6ebf267",
+			"name": "CREATE tour/review",
+			"url": "https://www.natours.dev/api/v1/tours/5c88fa8cf4afda39709c2955/reviews",
+			"time": 165,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Testing response body ": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing response body ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				165
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Testing response body ": true
+				}
+			]
+		},
+		{
+			"id": "32192409-899e-4249-bd8f-a5521c28c569",
+			"name": "Create tour/review tour id doesn't exist",
+			"url": "https://www.natours.dev/api/v1/tours/5c88fa8cf4afda39569c2955/reviews",
+			"time": 160,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Testing response body ": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing response body ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				160
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Testing response body ": true
+				}
+			]
+		},
+		{
+			"id": "7b502049-54da-47c4-804d-db634a4437f6",
+			"name": "Create tour/review wrong id format",
+			"url": "https://www.natours.dev/api/v1/tours/5c88fa8c/reviews",
+			"time": 162,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Testing response body ": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing response body ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				162
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Testing response body ": true
+				}
+			]
+		},
+		{
+			"id": "9366d749-4478-4e9c-9415-2044b1ea3066",
+			"name": "Wrong path",
+			"url": "https://www.natours.dev/api/v3/tours",
+			"time": 181,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Testing response body ": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Testing response body ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				181
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Testing response body ": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 8871,
+	"collection": {
+		"requests": [
+			{
+				"id": "b0c70736-cadb-4189-9ca3-376daf2c159a",
+				"method": "POST"
+			},
+			{
+				"id": "947818f4-c30f-4fab-a2e3-a1d93ebbb4cf",
+				"method": "POST"
+			},
+			{
+				"id": "fe11a258-2a3b-4022-b795-44f3133c5c3d",
+				"method": "POST"
+			},
+			{
+				"id": "a6d8b24c-5785-4a7a-84c9-29d51f15a87d",
+				"method": "POST"
+			},
+			{
+				"id": "1091ec7b-2c61-410f-9759-c0bcd06d9821",
+				"method": "POST"
+			},
+			{
+				"id": "559215ce-ec85-4e4f-812d-dff754d0dbd9",
+				"method": "PATCH"
+			},
+			{
+				"id": "ca857ff4-7a89-4b8b-b6cd-3ee806a924d7",
+				"method": "PATCH"
+			},
+			{
+				"id": "55cf014d-582c-4985-a8c9-a6cfbacb4b3e",
+				"method": "GET"
+			},
+			{
+				"id": "c05fb1df-1d87-4af1-a5a1-b414de50a716",
+				"method": "GET"
+			},
+			{
+				"id": "7cb8a6d4-9aca-45c5-8cdb-7c15d00b9e29",
+				"method": "POST"
+			},
+			{
+				"id": "f4dc6b0c-e595-417f-a6b4-3270cafd94fe",
+				"method": "GET"
+			},
+			{
+				"id": "bdfeb864-f4a1-46f7-954a-b73558cb9325",
+				"method": "GET"
+			},
+			{
+				"id": "6d0fd385-27da-47a5-a61c-69949f6b2fa1",
+				"method": "PATCH"
+			},
+			{
+				"id": "95134de3-ce40-4f68-a4de-87c207e85352",
+				"method": "DELETE"
+			},
+			{
+				"id": "f31ec3b0-3b01-483a-a618-d3cd000aac47",
+				"method": "GET"
+			},
+			{
+				"id": "6a73f914-d333-4a39-a1ab-2ff88e4a653c",
+				"method": "GET"
+			},
+			{
+				"id": "3422e4d0-88e3-48b7-83e8-bcaaebbecb43",
+				"method": "GET"
+			},
+			{
+				"id": "5376ebda-c817-434c-b01f-ab98ce8e0413",
+				"method": "GET"
+			},
+			{
+				"id": "f49e1d84-cc5b-4ee1-ae9a-ee21cd31cd86",
+				"method": "GET"
+			},
+			{
+				"id": "fce615e1-314c-44b8-8cac-9c85820debb4",
+				"method": "GET"
+			},
+			{
+				"id": "b9b9b659-e517-4de3-b216-3996c4365ddf",
+				"method": "GET"
+			},
+			{
+				"id": "0eb4c1ee-f3f3-4396-b342-bef9afcfb8ca",
+				"method": "GET"
+			},
+			{
+				"id": "990bcfbb-f067-46ad-af1f-dc6b47138e7d",
+				"method": "GET"
+			},
+			{
+				"id": "8d2a2f5d-ac3d-46f1-a73c-264041c94f54",
+				"method": "GET"
+			},
+			{
+				"id": "917aaa29-290f-4702-ab41-2773878b0515",
+				"method": "PATCH"
+			},
+			{
+				"id": "a9d3650f-57ba-4e95-95d6-cc1795c7d4da",
+				"method": "DELETE"
+			},
+			{
+				"id": "7286837f-9e68-496b-92d5-0c4f02288b28",
+				"method": "DELETE"
+			},
+			{
+				"id": "614ae062-7074-44be-bcf3-2224763b82f5",
+				"method": "PATCH"
+			},
+			{
+				"id": "b5c90ab3-1cfa-4398-85d8-5fc580b0e754",
+				"method": "GET"
+			},
+			{
+				"id": "26721c30-ea44-4239-95c5-bd780ab9e4a2",
+				"method": "GET"
+			},
+			{
+				"id": "4a3c3497-dff4-4d42-8749-683bb4f84732",
+				"method": "GET"
+			},
+			{
+				"id": "5901bc09-aeb7-4ef8-bf1d-18d7c6fecd8f",
+				"method": "GET"
+			},
+			{
+				"id": "bb5dd7c3-6176-45e6-b9ff-d6ebb8ec9b23",
+				"method": "POST"
+			},
+			{
+				"id": "4375fc17-89b1-4071-b6e8-d24d7cb2b1f1",
+				"method": "POST"
+			},
+			{
+				"id": "ac970682-ea23-4dee-ad9c-c695ab1e0866",
+				"method": "POST"
+			},
+			{
+				"id": "54758d33-b175-4b3c-be5b-e86325778e83",
+				"method": "POST"
+			},
+			{
+				"id": "06d5c807-5e81-4d3f-a654-b3f0e0f86530",
+				"method": "DELETE"
+			},
+			{
+				"id": "f4f89ef3-905a-407e-8e44-6d2de963bc37",
+				"method": "PATCH"
+			},
+			{
+				"id": "f1f94351-190c-45f0-818a-a45a30cfb21f",
+				"method": "GET"
+			},
+			{
+				"id": "010ae176-a6f9-4d7e-b72f-773619f54eba",
+				"method": "GET"
+			},
+			{
+				"id": "af31d159-57c0-4657-a7dd-b4d69b44c2f7",
+				"method": "GET"
+			},
+			{
+				"id": "a50a52cd-fa04-4b95-bb13-1977a6ebf267",
+				"method": "POST"
+			},
+			{
+				"id": "32192409-899e-4249-bd8f-a5521c28c569",
+				"method": "POST"
+			},
+			{
+				"id": "7b502049-54da-47c4-804d-db634a4437f6",
+				"method": "POST"
+			},
+			{
+				"id": "9366d749-4478-4e9c-9415-2044b1ea3066",
+				"method": "GET"
+			}
+		]
+	}
+}
